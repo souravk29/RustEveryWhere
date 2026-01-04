@@ -29,6 +29,11 @@ fn main(){
     for element in (0..=4){
         println!("{}" , array[element]);
     }
+    
+    
+    for i in 0..=10 {
+        println!("{i}");
+    }
 
 
 
