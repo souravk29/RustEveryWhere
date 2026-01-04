@@ -1,4 +1,4 @@
-
+mod noBin;
 
 fn sendHere(s: &String){
     println!("{} added to the 2nd function", s);
