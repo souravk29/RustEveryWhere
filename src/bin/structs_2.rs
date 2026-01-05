@@ -9,4 +9,17 @@ fn main(){
         l*w
     }
 
+    /****************************************************************/
+
+    let dimension = (7,5);
+
+    println!("the area of a rectangle of length {length} and width {width} is : {}", calculate_area_by_dim(dimension) );
+
+    fn calculate_area_by_dim( d: (u32, u32) ) -> u32{
+        d.0 * d.1
+    }
+
+
+
+
 }
