@@ -5,6 +5,8 @@ struct dim_of_rec{
     breadth: u32,
 }
 
+struct UnitStruct;                              // unit type
+
 
 fn main(){
     let length: u32 = 5;
