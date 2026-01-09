@@ -2,7 +2,22 @@ use std::collections::HashMap;
 
 fn main(){
 
-    println!("this is rust");
+    let mut map = HashMap::new();
+
+    map.insert("india", None );
+    map.insert("england", Some(200));
+
+    let find_from_key: &str = "india";
+    let value_for_key = map.get(&find_from_key); //copied().unwrap_or(0);
+
+    println!("{value_for_key:?}");
+
+
+    let value_for_first = map.keys();
+    let values = map.values();
+
+    println!("{value_for_first:?}");
+    println!("{values:?}");
 
     let field_name = String::from("Favorite color");
     let field_value = String::from("Blue");
@@ -20,5 +35,8 @@ fn main(){
 
     // field_name and field_value are invalid at this point, try using them and
     // see what compiler error you get!
+
+
+
 
 }
